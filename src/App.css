@@ -1,73 +1,91 @@
 .layout {
-  min-width: 800px;
   max-width: 1200px;
+  min-width: 800px;
   margin: 0 auto;
+  padding: 1rem 0;
 }
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 2rem;
+  background-color: aliceblue;
 }
 
-.add-todo {
+form {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  margin: 5px 0;
+  padding: 1rem 2rem;
+
   background-color: whitesmoke;
 }
 
-.form-title {
-  font-weight: bold;
+.lists {
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
-.form-content {
-  width: 200px;
-  padding: 10px;
-  margin: 0 20px;
-  border: none;
-  border-radius: 10px;
+.list-title {
+  margin: 0;
+  padding-bottom: 5px;
 }
 
-.addBtn {
-  width: 100px;
-  border: none;
-  border-radius: 10px;
-  background-color: powderblue;
-  font-weight: bold;
-}
-
-.todo-list {
-  padding: 20px;
+.todo-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 20px;
 }
 
 .todo-item {
-  border: 3px solid darkseagreen;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 3px dotted dodgerblue;
+  text-align: center;
 }
 
-.removeBtn,
-.checkDoneBtn {
-  width: 50px;
-  height: 30px;
-  margin-right: 10px;
+.todo-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-.removeBtn {
-  background-color: white;
-  border: 3px solid red;
-  border-radius: 10px;
+label {
+  font-weight: bold;
+  font-size: larger;
 }
-.checkDoneBtn {
-  background-color: white;
-  border: 3px solid green;
+
+input {
+  padding: 10px;
+  border: 1px solid dodgerblue;
   border-radius: 10px;
 }
 
-.addBtn,
-.removeBtn,
-.checkDoneBtn {
+button {
   cursor: pointer;
+}
+
+.addTodoBtn {
+  border: 3px solid powderblue;
+}
+
+.controlTodoBtn {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 10px;
+  margin: 0 0.5rem;
+}
+
+.controlTodoBtn:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.deleteTodoBtn {
+  border: 3px solid red;
+}
+
+.editDoneBtn {
+  border: 3px solid green;
 }
