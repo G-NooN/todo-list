@@ -28,10 +28,10 @@ const TodoItemButtonController = ({ todoList, setTodoList, todo, checkDone }) =>
 
   return (
     <>
-      <button className="deleteTodoBtn controlTodoBtn" onClick={deleteTodoHandler}>
+      <button className="delete-todo-btn control-todo-btn" onClick={deleteTodoHandler}>
         삭제하기
       </button>
-      <button className="editDoneBtn controlTodoBtn" onClick={editDoneHandler}>
+      <button className="edit-done-btn control-todo-btn" onClick={editDoneHandler}>
         {!checkDone ? "완료" : "완료취소"}
       </button>
     </>

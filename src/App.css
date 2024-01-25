@@ -66,26 +66,26 @@ button {
   cursor: pointer;
 }
 
-.addTodoBtn {
+.add-todo-btn {
   border: 3px solid powderblue;
 }
 
-.controlTodoBtn {
+.control-todo-btn {
   width: 8rem;
   height: 2rem;
   border-radius: 10px;
   margin: 0 0.5rem;
 }
 
-.controlTodoBtn:hover {
+.control-todo-btn:hover {
   background-color: white;
   transform: scale(1.05);
 }
 
-.deleteTodoBtn {
+.delete-todo-btn {
   border: 3px solid red;
 }
 
-.editDoneBtn {
+.edit-done-btn {
   border: 3px solid green;
 }

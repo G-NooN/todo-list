@@ -53,7 +53,7 @@ const AddTodoForm = ({ todoList, setTodoList }) => {
           onChange={contentChangeHandler}
         />
       </div>
-      <button type="submit" className="addTodoBtn controlTodoBtn">
+      <button type="submit" className="add-todo-btn control-todo-btn">
         추가하기
       </button>
     </form>
