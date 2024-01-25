@@ -29,6 +29,8 @@ const AddTodoForm = ({ todoList, setTodoList }) => {
 
     setTodoList([...todoList, newTodo]);
     alert("추가되었습니다.");
+    setTodoTitle("");
+    setTodoContent("");
   };
 
   return (
